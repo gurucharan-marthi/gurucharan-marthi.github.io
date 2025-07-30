@@ -130,3 +130,29 @@ name {
 span.highlight {
   background-color: #ffcccb;
 }
+
+.hoverZoomLink img {
+    transition: transform 0.3s ease-in-out;
+}
+.hoverZoomLink img:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+}
+
+/* Specific Classes */
+.news-date { 
+    font-weight: 500; 
+    color: var(--primary-color, #0056b3); /* Highlight dates */
+    margin-right: 5px;
+}
+
+/* Scrollable News Container */
+.news-scroll-container {
+    max-height: 400px; /* Adjust this value as needed */
+    overflow-y: auto;
+    padding-right: 15px; /* Space for the scrollbar */
+}
+
+/* Define a primary color variable (optional, but good practice if used) */
+:root {
+  --primary-color: #0056b3; /* Example primary color */
+}
