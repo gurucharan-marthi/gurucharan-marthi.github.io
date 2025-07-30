@@ -6,217 +6,127 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Gurucharan Marthi Krishna Kumar">
   <meta name="description" content="Ph.D. Candidate in Neuroscience at McGill University. Research in AI, Medical Imaging, Computer Vision, and Deep Learning.">
-
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
-  <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      background-color: #f9f9f9;
-      color: #222;
-      margin: 0;
-      padding: 0;
-    }
-
-    a {
-      color: #c62828;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    table {
-      max-width: 900px;
-      margin: auto;
-      border-collapse: separate;
-      border-spacing: 0;
-      background-color: white;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-    }
-
-    img {
-      border-radius: 8px;
-    }
-
-    heading {
-      display: block;
-      font-size: 24px;
-      font-weight: 700;
-      margin: 20px 0 10px;
-      color: #c62828;
-    }
-
-    papertitle {
-      font-weight: 700;
-      font-size: 16px;
-      color: #c62828;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    name {
-      font-size: 30px;
-      font-weight: 700;
-      color: #c62828;
-    }
-
-    p {
-      line-height: 1.6;
-    }
-
-    .profile-img {
-      max-width: 100%;
-      border: 3px solid #c62828;
-    }
-
-    .link-bar {
-      text-align: center;
-      margin-top: 10px;
-      font-size: 16px;
-    }
-
-    .link-bar a {
-      margin: 0 10px;
-    }
-
-    .section {
-      margin-top: 40px;
-    }
-
-    .card {
-      display: flex;
-      gap: 20px;
-      margin-bottom: 30px;
-    }
-
-    .card img {
-      width: 160px;
-      height: auto;
-    }
-
-    .card-content {
-      flex: 1;
-    }
-
-    @media(max-width: 768px) {
-      .card {
-        flex-direction: column;
-      }
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <table>
     <tr>
-      <td style="vertical-align:top; width:60%;">
+      <td style="width:60%; vertical-align:top;">
         <p style="text-align:center"><name>Gurucharan Marthi Krishna Kumar</name></p>
-        <p>
-          I am a <strong>Ph.D. candidate in Neuroscience</strong> at <a href="https://www.mcgill.ca/">McGill University</a>, affiliated with the <a href="https://www.mcgill.ca/neuro/">Montreal Neurological Institute</a>.
-          My work is supervised by <a href="https://www.mcgill.ca/neuro/amir-shmuel">Dr. Amir Shmuel</a> and <a href="https://www.mcgill.ca/psychology/janine-mendola">Dr. Janine Mendola</a>.
-        </p>
-        <p>
-          My research lies at the convergence of <strong>Artificial Intelligence, Medical Imaging, and Neuroscience</strong>. I specialize in developing automated deep learning pipelines for analyzing the optic nerve and visual pathways using <strong>diffusion MRI and structural imaging</strong>. I’m especially interested in using foundation models and generative AI for building intelligent healthcare solutions.
-        </p>
-        <p>
-          My broader goal is to create practical, interpretable, and scalable tools that improve medical diagnostics and neuroscientific understanding using cutting-edge deep learning techniques.
-        </p>
-        <div class="link-bar">
+        <p>I am a <strong>Ph.D. candidate in Neuroscience</strong> at <a href="https://www.mcgill.ca/">McGill University</a>, working under the supervision of <a href="https://www.mcgill.ca/neuro/amir-shmuel">Dr. Amir Shmuel</a> and <a href="https://www.mcgill.ca/psychology/janine-mendola">Dr. Janine Mendola</a> at the <a href="https://www.mcgill.ca/neuro/">Montreal Neurological Institute</a>.</p>
+
+        <p>My research lies at the intersection of <strong>Artificial Intelligence</strong>, <strong>Medical Imaging</strong>, and <strong>Neuroscience</strong>. I develop automated deep learning-based pipelines for analyzing the visual pathway using diffusion MRI and structural imaging. I am also interested in leveraging foundation models and multimodal data for scalable medical diagnostics.</p>
+
+        <p>My broader goal is to use advanced computer vision and deep learning to build real-world healthcare tools that are interpretable, generalizable, and clinically meaningful.</p>
+
+        <p class="link-bar">
           <a href="mailto:gurucharan.marthikrishnakumar@mail.mcgill.ca">Email</a> /
           <a href="data/Gurucharan_CV.pdf">CV</a> /
           <a href="https://linkedin.com/in/gurucharan-marthi">LinkedIn</a> /
           <a href="https://github.com/gurucharan-marthi">GitHub</a>
-        </div>
+        </p>
       </td>
-      <td style="padding-left:20px;width:40%">
-        <img src="images/GurucharanProfile.jpg" alt="Profile Photo" class="profile-img">
+      <td style="padding-left:20px;width:40%;">
+        <img class="profile-img" src="images/GurucharanProfile.jpg" alt="Gurucharan Marthi Krishna Kumar" width="250">
       </td>
     </tr>
   </table>
 
-  <table class="section">
-    <tr><td><heading>Research</heading></td></tr>
+  <table>
+    <tr><td><heading>Research Interests</heading></td></tr>
     <tr><td>
       <ul>
-        <li><strong>Medical Image Processing:</strong> Diffusion & structural MRI, tractography</li>
-        <li><strong>Deep Learning & Computer Vision:</strong> Segmentation, anomaly detection</li>
-        <li><strong>Foundation Models & LLMs:</strong> Multimodal medical AI integration</li>
-        <li><strong>Neuroscience Applications:</strong> Visual pathway analysis, optic nerve imaging</li>
+        <li><strong>Medical Image Processing:</strong> diffusion/structural MRI, tractography, registration</li>
+        <li><strong>Deep Learning:</strong> segmentation, anomaly detection, transformers</li>
+        <li><strong>Generative AI & Foundation Models:</strong> LLMs for medical reasoning</li>
+        <li><strong>Neuroscience Applications:</strong> optic nerve & visual system analysis</li>
       </ul>
     </td></tr>
   </table>
 
-  <table class="section">
+  <table>
     <tr><td><heading>Selected Publications</heading></td></tr>
     <tr><td>
-      <div class="card">
-        <img src="images/medvision_llama.png" alt="MedVisionLlama">
-        <div class="card-content">
-          <papertitle>MedVisionLlama: Leveraging Pre-Trained Large Language Model Layers to Enhance Medical Image Segmentation</papertitle><br>
-          <strong>Gurucharan Marthi Krishna Kumar</strong>, Aman Chadha, Janine Mendola, Amir Shmuel<br>
-          <em>Preprint</em>, 2025 — <a href="https://arxiv.org/abs/2410.02458">arXiv</a>
-          <p>Introduced a novel method combining LLM layers with CNNs for better segmentation in medical imaging.</p>
-        </div>
-      </div>
+      <table>
+        <tr>
+          <td style="padding:10px 10px 10px 0;">
+            <div class="one">
+              <img src="images/medvision_llama.png" alt="MedVisionLlama" width="160">
+            </div>
+          </td>
+          <td>
+            <papertitle>MedVisionLlama: Leveraging Pre-Trained Large Language Model Layers to Enhance Medical Image Segmentation</papertitle><br>
+            <strong>Gurucharan Marthi Krishna Kumar</strong>, Aman Chadha, Janine Mendola, Amir Shmuel<br>
+            <em>Preprint</em>, 2025 &nbsp;
+            <a href="https://arxiv.org/abs/2410.02458">arXiv</a>
+            <p>We introduce a hybrid deep learning method combining pre-trained LLM features with visual encoders for improved segmentation accuracy in clinical MRI scans.</p>
+          </td>
+        </tr>
 
-      <div class="card">
-        <img src="images/nestedmorph.png" alt="NestedMorph">
-        <div class="card-content">
-          <papertitle>NestedMorph: Enhancing Deformable Medical Image Registration with Nested Attention Mechanisms</papertitle><br>
-          <strong>Gurucharan Marthi Krishna Kumar</strong>, Janine Mendola, Amir Shmuel<br>
-          <em>WACV</em>, 2025
-          <p>Nested attention-based architecture improves deformable registration for complex neuroanatomical regions.</p>
-        </div>
-      </div>
+        <tr>
+          <td style="padding:10px 10px 10px 0;">
+            <div class="one">
+              <img src="images/nestedmorph.png" alt="NestedMorph" width="160">
+            </div>
+          </td>
+          <td>
+            <papertitle>NestedMorph: Enhancing Deformable Medical Image Registration with Nested Attention Mechanisms</papertitle><br>
+            <strong>Gurucharan Marthi Krishna Kumar</strong>, Janine Mendola, Amir Shmuel<br>
+            <em>WACV</em>, 2025
+            <p>Nested attention blocks in CNNs improve medical image alignment accuracy in complex neuroanatomical regions.</p>
+          </td>
+        </tr>
 
-      <div class="card">
-        <img src="images/multimodal_retrieval.png" alt="Medical Image Retrieval">
-        <div class="card-content">
-          <papertitle>Multimodal Medical Image Retrieval System for Clinical Decision Support System</papertitle><br>
-          <strong>Gurucharan Marthi Krishna Kumar</strong>, Vijay Jeyakumar, Siddarth S<br>
-          <em>Springer</em>, 2024 — <a href="https://doi.org/10.1016/B978-0-443-15452-2.00025-X">DOI</a>
-          <p>Developed a multimodal retrieval framework to support clinical workflows by combining imaging and metadata.</p>
-        </div>
-      </div>
+        <tr>
+          <td style="padding:10px 10px 10px 0;">
+            <div class="one">
+              <img src="images/multimodal_retrieval.png" alt="Multimodal Retrieval" width="160">
+            </div>
+          </td>
+          <td>
+            <papertitle>Multimodal Medical Image Retrieval System for Clinical Decision Support System</papertitle><br>
+            <strong>Gurucharan Marthi Krishna Kumar</strong>, Vijay Jeyakumar, Siddarth S<br>
+            <em>Springer</em>, 2024 &nbsp;
+            <a href="https://doi.org/10.1016/B978-0-443-15452-2.00025-X">DOI</a>
+            <p>Designed a multimodal retrieval system combining imaging and structured metadata to aid clinical decision support.</p>
+          </td>
+        </tr>
+      </table>
     </td></tr>
   </table>
 
-  <table class="section">
+  <table>
     <tr><td><heading>Conference Presentations</heading></td></tr>
     <tr><td>
       <ul>
         <li><strong>WACV 2025</strong> – Full paper presentation</li>
-        <li><strong>ISMRM 2024</strong> – Visual pathway tractography (abstract + poster)</li>
-        <li><strong>OHBM 2023</strong> – Optic nerve imaging optimization (abstract + poster)</li>
+        <li><strong>ISMRM 2024</strong> – Visual pathway tractography (poster)</li>
+        <li><strong>OHBM 2023</strong> – Optic nerve imaging optimization (poster)</li>
       </ul>
     </td></tr>
   </table>
 
-  <table class="section">
+  <table>
     <tr><td><heading>Honors and Awards</heading></td></tr>
     <tr><td>
       <ul>
         <li><strong>FRQS Doctoral Research Scholarship</strong>, 2025–2029 – $91,667</li>
         <li><strong>UNIQUE Travel Award</strong>, 2025 – $1,000</li>
         <li><strong>ISMRM Trainee Stipend</strong>, 2024 – $1,200</li>
-        <li><strong>Full Ph.D. Scholarship</strong>, The Neuro, McGill (2022–2026) – $30,000/year</li>
-        <li><strong>University Medal</strong>, Anna University – Rank 3 out of 1000+ (2021)</li>
-        <li><strong>National GATE Rank 93</strong>, Top 1% in India (2021)</li>
+        <li><strong>Ph.D. Scholarship</strong>, McGill Neuro, 2022–2026 – $30,000/year</li>
+        <li><strong>University Medal</strong>, Anna University – Top 3 rank (2021)</li>
+        <li><strong>GATE Rank 93</strong>, Top 1% in India (2021)</li>
       </ul>
     </td></tr>
   </table>
 
-  <table class="section">
-    <tr><td><heading>Teaching</heading></td></tr>
+  <table>
+    <tr><td><heading>Teaching Experience</heading></td></tr>
     <tr><td>
       <ul>
-        <li><strong>COMP273</strong>: Intro to Computer Systems – Winter 2025, Fall 2024, Winter 2024</li>
+        <li><strong>COMP273</strong>: Introduction to Computer Systems (McGill) – Winter 2025, Fall 2024, Winter 2024</li>
         <li><strong>BIEN220</strong>: Mechanics for Bioengineers – Winter 2025</li>
         <li><strong>BIEN570</strong>: Active Mechanics in Biology – Fall 2024</li>
         <li><strong>CCCS300</strong>: Programming Techniques I – Winter 2024</li>
@@ -224,13 +134,11 @@
     </td></tr>
   </table>
 
-  <table style="max-width:900px;margin:auto;text-align:right;font-size:small;border:0px;">
-    <tr>
-      <td>
-        <br>
-        Template adapted from <a href="https://github.com/jonbarron/jonbarron.github.io">Jon Barron</a>
-      </td>
-    </tr>
+  <table style="max-width:800px;margin:auto;text-align:right;font-size:small;border:0px;">
+    <tr><td>
+      <br>
+      Template adapted from <a href="https://github.com/jonbarron/jonbarron.github.io">Jon Barron</a>
+    </td></tr>
   </table>
 </body>
 </html>
