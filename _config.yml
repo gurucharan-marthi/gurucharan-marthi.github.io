@@ -1,0 +1,16 @@
+# Site settings
+title: Gurucharan Marthi Krishna Kumar
+description: Ph.D. Candidate in Neuroscience at McGill University
+url: "https://yourusername.github.io"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Exclude files
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
