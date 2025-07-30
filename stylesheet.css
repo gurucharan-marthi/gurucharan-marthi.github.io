@@ -64,12 +64,12 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-/* --- Global Variables (using your colors) --- */
+/* --- Global Variables (using burgundy) --- */
 :root {
-  --primary-color: #2d59eb; /* Your link color */
-  --hover-color: #af19bf; /* Your hover color */
-  --text-color: #333; /* A general body text color */
-  --heading-color: #2c3e50; /* A dark blue-gray for headings/names */
+  --primary-color: #800020; /* Burgundy */
+  --hover-color: #B80F2B; /* A slightly lighter burgundy for hover */
+  --text-color: #333;
+  --heading-color: #4A0000; /* A darker burgundy for headings/names */
   --box-shadow-color: rgba(0,0,0,0.1);
 }
 
@@ -82,83 +82,84 @@ p,
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 16px;
-  line-height: 1.6; /* Added for better readability, applied broadly */
-  color: var(--text-color); /* Set default text color */
+  line-height: 1.6;
+  color: var(--text-color);
 }
 
 body {
   margin: 0;
-  padding: 20px; /* Added general padding for the body */
-  background-color: #f9f9f9; /* Light background */
+  padding: 20px;
+  background-color: #f9f9f9;
 }
 
 strong {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 16px; /* Your existing size */
-  font-weight: 700; /* Ensure strong text is bold */
+  font-size: 16px;
+  font-weight: 700;
 }
 
-/* --- Typography Specific Elements (refined for consistency and display) --- */
+/* --- Typography Specific Elements --- */
 heading {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 24px; /* Your existing size */
-  font-weight: 700; /* Ensure headings are bold */
+  font-size: 24px;
+  font-weight: 700;
   margin-top: 20px;
   margin-bottom: 15px;
-  display: block; /* Important for margins/padding to work as blocks */
+  display: block;
   color: var(--heading-color);
 }
 
 papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 18px; /* Slightly increased for more prominence as a title */
-  font-weight: 700; /* Your existing bold setting */
-  display: block; /* Important for margins/padding to work as blocks */
+  font-size: 18px;
+  font-weight: 700;
+  display: block;
   margin-bottom: 5px;
-  color: var(--heading-color); /* Matches heading for consistency */
+  color: var(--heading-color);
 }
 
 name {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 38px; /* Slightly increased for more prominence */
-  font-weight: 700; /* Ensure it's bold */
+  font-size: 42px; /* Increased size for the name */
+  font-weight: 700;
   display: block;
   margin-bottom: 15px;
   color: var(--heading-color);
+  text-align: center; /* Center the larger name */
 }
 
 
 /* --- Links --- */
 a {
-  color: var(--primary-color); /* Your existing color via variable */
+  color: var(--primary-color);
   text-decoration: none;
-  transition: color 0.3s ease; /* Smooth transition for hover */
+  transition: color 0.3s ease;
 }
 
 a:focus,
 a:hover {
-  color: var(--hover-color); /* Your existing hover color via variable */
-  text-decoration: underline; /* Standard underline on hover */
+  color: var(--hover-color);
+  text-decoration: underline;
 }
 
 
 /* --- Images --- */
 img {
-    border-radius: 8px; /* Slightly rounded corners for images */
-    box-shadow: 0 4px 8px var(--box-shadow-color); /* Subtle shadow */
-    max-width: 100%; /* Ensures images are responsive within their containers */
-    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--box-shadow-color);
+    max-width: 100%;
+    height: auto;
 }
 
 .hoverZoomLink img {
     transition: transform 0.3s ease-in-out;
 }
 .hoverZoomLink img:hover {
-    transform: scale(1.02); /* Slight zoom on hover */
+    transform: scale(1.02);
 }
 
 
-/* --- Utility Classes & Specific Components (from your provided CSS) --- */
+/* --- Utility Classes & Specific Components --- */
 .one {
   width: 160px;
   height: 160px;
@@ -181,24 +182,24 @@ img {
 }
 
 span.highlight {
-  background-color: #ffffd0; /* Your existing highlight color */
+  background-color: #ffffd0;
 }
 
 
 /* --- List Styles (for news and achievements) --- */
 ul {
-    list-style: none; /* Removes default bullets */
+    list-style: none;
     padding: 0;
     margin-left: 0;
 }
 li {
-    margin-bottom: 10px; /* Space between list items */
-    padding-left: 25px; /* Indent for custom bullet */
+    margin-bottom: 10px;
+    padding-left: 25px;
     position: relative;
 }
 li::before {
-    content: "•"; /* Custom bullet point */
-    color: var(--primary-color); /* Use primary color for bullets */
+    content: "•";
+    color: var(--primary-color); /* Burgundy bullet points */
     font-weight: bold;
     display: inline-block;
     width: 1em;
@@ -209,19 +210,19 @@ li::before {
 
 /* News & Achievements Section Specifics */
 .news-date {
-    font-weight: 500; /* Slightly bolder than normal text */
-    color: var(--primary-color); /* Highlight dates with primary color */
+    font-weight: 500;
+    color: var(--primary-color); /* Burgundy dates */
     margin-right: 5px;
 }
 
 .news-scroll-container {
-    max-height: 400px; /* Crucial: Sets a fixed height for scrolling */
-    overflow-y: auto;  /* Crucial: Enables vertical scrollbar when content overflows */
-    padding-right: 15px; /* Adds space for the scrollbar so text doesn't touch it */
-    border: 1px solid #eee; /* Optional: A light border for visual separation */
-    border-radius: 5px; /* Optional: Slightly rounded corners */
-    background-color: #fff; /* Optional: A clean background for the scrollable area */
-    padding: 15px; /* Optional: Internal padding around the content */
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 15px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 15px;
 }
 
 /* Horizontal Rule for Section Separation */
