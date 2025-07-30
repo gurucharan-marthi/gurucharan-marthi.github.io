@@ -1,3 +1,4 @@
+/* Font Imports (from your provided CSS) */
 /* latin-ext */
 @font-face {
   font-family: 'Lato';
@@ -63,49 +64,101 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-a {
-  color: #b71c1c;
-  text-decoration: none;
+
+/* --- Global Variables --- */
+:root {
+  --primary-color: #b71c1c; /* Changed from default blue to your link color for consistency */
+  --hover-color: #d32f2f; /* Darker red for hover */
+  --text-color: #333;
+  --heading-color: #2c3e50;
+  --box-shadow-color: rgba(0,0,0,0.1);
 }
 
-a:focus,
-a:hover {
-  color: #d32f2f;
-  text-decoration: none;
-}
 
-
-body,
-td,
-th,
-tr,
-p,
-a {
+/* --- Base Styles --- */
+body {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 16px
+  font-size: 16px;
+  line-height: 1.6; /* Added for better readability */
+  color: var(--text-color);
+  margin: 0;
+  padding: 20px; /* Added general padding for the body */
+  background-color: #f9f9f9; /* Light background */
+}
+
+/* Common text elements */
+body, td, th, tr, p, a {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 16px;
 }
 
 strong {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 16px; /* Explicitly set, although inherited from body generally */
+  font-weight: 700; /* Ensure bold is actually bold */
 }
 
+/* --- Typography Specific Elements --- */
 heading {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 24px;
+  font-size: 24px; /* Matches your current definition */
+  font-weight: 700; /* Ensure headings are bold */
+  margin-top: 20px;
+  margin-bottom: 15px;
+  display: block; /* Ensures it takes up full width for margin/padding */
+  color: var(--heading-color);
 }
 
 papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 16px;
-  font-weight: 700
+  font-size: 18px; /* Slightly increased for better readability as a title */
+  font-weight: 700;
+  display: block; /* Ensures it takes up full width for margin/padding */
+  margin-bottom: 5px;
+  color: var(--heading-color); /* Matches heading for consistency */
 }
 
 name {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 34px;
+  font-size: 38px; /* Slightly increased for more prominence */
+  font-weight: 700; /* Ensure it's bold */
+  display: block;
+  margin-bottom: 15px;
+  color: var(--heading-color);
 }
 
+
+/* --- Links --- */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth transition for hover */
+}
+
+a:focus,
+a:hover {
+  color: var(--hover-color);
+  text-decoration: underline; /* Standard underline on hover */
+}
+
+
+/* --- Images --- */
+img {
+    border-radius: 8px; /* Slightly rounded corners for images */
+    box-shadow: 0 4px 8px var(--box-shadow-color); /* Subtle shadow */
+    max-width: 100%; /* Ensures images are responsive within their containers */
+    height: auto; /* Maintains aspect ratio */
+}
+
+.hoverZoomLink img {
+    transition: transform 0.3s ease-in-out;
+}
+.hoverZoomLink img:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+}
+
+
+/* --- Utility Classes & Specific Components --- */
 .one {
   width: 160px;
   height: 160px;
@@ -128,31 +181,52 @@ name {
 }
 
 span.highlight {
-  background-color: #ffcccb;
+  background-color: #ffcccb; /* Keeps your existing highlight color */
 }
 
-.hoverZoomLink img {
-    transition: transform 0.3s ease-in-out;
+/* Custom bullet points for list items (moved from inline style) */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 0;
 }
-.hoverZoomLink img:hover {
-    transform: scale(1.02); /* Slight zoom on hover */
+li {
+    margin-bottom: 10px;
+    padding-left: 25px; /* Indent for custom bullet */
+    position: relative;
+}
+li::before {
+    content: "•"; /* Custom bullet */
+    color: var(--primary-color);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    position: absolute;
+    left: 0;
 }
 
-/* Specific Classes */
-.news-date { 
-    font-weight: 500; 
-    color: var(--primary-color, #0056b3); /* Highlight dates */
+/* News & Achievements Section Specifics */
+.news-date {
+    font-weight: 500;
+    color: var(--primary-color); /* Highlight dates */
     margin-right: 5px;
 }
 
-/* Scrollable News Container */
 .news-scroll-container {
-    max-height: 400px; /* Adjust this value as needed */
+    max-height: 400px; /* Adjust this value as needed for the scrollable area */
     overflow-y: auto;
     padding-right: 15px; /* Space for the scrollbar */
+    border: 1px solid #eee; /* Light border for visual separation */
+    border-radius: 5px; /* Slightly rounded corners */
+    background-color: #fff; /* White background for the scrollable area */
+    padding: 15px; /* Internal padding */
 }
 
-/* Define a primary color variable (optional, but good practice if used) */
-:root {
-  --primary-color: #0056b3; /* Example primary color */
+/* Horizontal Rule for Section Separation */
+hr {
+  border: 0;
+  height: 1px;
+  background: #ccc;
+  margin: 30px 0;
 }
