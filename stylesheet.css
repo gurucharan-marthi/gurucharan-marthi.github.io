@@ -1,263 +1,233 @@
+/* Font Imports (from your provided CSS - kept exactly as is) */
 /* latin-ext */
-
 @font-face {
-
-  font-family: 'Lato';
-
-  font-style: italic;
-
-  font-weight: 400;
-
-  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAUi-qNiXg7eU0.woff2) format('woff2');
-
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAUi-qNiXg7eU0.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
-
 /* latin */
-
 @font-face {
-
-  font-family: 'Lato';
-
-  font-style: italic;
-
-  font-weight: 400;
-
-  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAXC-qNiXg7Q.woff2) format('woff2');
-
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAXC-qNiXg7Q.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-
 /* latin-ext */
-
 @font-face {
-
-  font-family: 'Lato';
-
-  font-style: italic;
-
-  font-weight: 700;
-
-  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_FQftx9897sxZ.woff2) format('woff2');
-
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_FQftx9897sxZ.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
-
 /* latin */
-
 @font-face {
-
-  font-family: 'Lato';
-
-  font-style: italic;
-
-  font-weight: 700;
-
-  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_Gwftx9897g.woff2) format('woff2');
-
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_Gwftx9897g.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-
 /* latin-ext */
-
 @font-face {
-
-  font-family: 'Lato';
-
-  font-style: normal;
-
-  font-weight: 400;
-
-  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format('woff2');
-
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
-
 /* latin */
-
 @font-face {
-
-  font-family: 'Lato';
-
-  font-style: normal;
-
-  font-weight: 400;
-
-  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
-
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-
 /* latin-ext */
-
 @font-face {
-
-  font-family: 'Lato';
-
-  font-style: normal;
-
-  font-weight: 700;
-
-  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwaPGQ3q5d0N7w.woff2) format('woff2');
-
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwaPGQ3q5d0N7w.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
-
 /* latin */
-
 @font-face {
-
-  font-family: 'Lato';
-
-  font-style: normal;
-
-  font-weight: 700;
-
-  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
-
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-
-
-a {
-
-  color: #b71c1c;
-
-  text-decoration: none;
-
+/* --- Global Variables (using your colors) --- */
+:root {
+  --primary-color: #2d59eb; /* Your link color */
+  --hover-color: #af19bf; /* Your hover color */
+  --text-color: #333; /* A general body text color */
+  --heading-color: #2c3e50; /* A dark blue-gray for headings/names */
+  --box-shadow-color: rgba(0,0,0,0.1);
 }
 
-
-
-a:focus,
-
-a:hover {
-
-  color: #d32f2f;
-
-  text-decoration: none;
-
-}
-
-
-
-
-
+/* --- Base Styles --- */
 body,
-
 td,
-
 th,
-
 tr,
-
 p,
-
 a {
-
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-
-  font-size: 16px
-
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6; /* Added for better readability, applied broadly */
+  color: var(--text-color); /* Set default text color */
 }
 
-
+body {
+  margin: 0;
+  padding: 20px; /* Added general padding for the body */
+  background-color: #f9f9f9; /* Light background */
+}
 
 strong {
-
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-
-  font-size: 16px;
-
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 16px; /* Your existing size */
+  font-weight: 700; /* Ensure strong text is bold */
 }
 
-
-
+/* --- Typography Specific Elements (refined for consistency and display) --- */
 heading {
-
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-
-  font-size: 24px;
-
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 24px; /* Your existing size */
+  font-weight: 700; /* Ensure headings are bold */
+  margin-top: 20px;
+  margin-bottom: 15px;
+  display: block; /* Important for margins/padding to work as blocks */
+  color: var(--heading-color);
 }
-
-
 
 papertitle {
-
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-
-  font-size: 16px;
-
-  font-weight: 700
-
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 18px; /* Slightly increased for more prominence as a title */
+  font-weight: 700; /* Your existing bold setting */
+  display: block; /* Important for margins/padding to work as blocks */
+  margin-bottom: 5px;
+  color: var(--heading-color); /* Matches heading for consistency */
 }
-
-
 
 name {
-
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-
-  font-size: 34px;
-
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 38px; /* Slightly increased for more prominence */
+  font-weight: 700; /* Ensure it's bold */
+  display: block;
+  margin-bottom: 15px;
+  color: var(--heading-color);
 }
 
 
+/* --- Links --- */
+a {
+  color: var(--primary-color); /* Your existing color via variable */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth transition for hover */
+}
 
+a:focus,
+a:hover {
+  color: var(--hover-color); /* Your existing hover color via variable */
+  text-decoration: underline; /* Standard underline on hover */
+}
+
+
+/* --- Images --- */
+img {
+    border-radius: 8px; /* Slightly rounded corners for images */
+    box-shadow: 0 4px 8px var(--box-shadow-color); /* Subtle shadow */
+    max-width: 100%; /* Ensures images are responsive within their containers */
+    height: auto; /* Maintains aspect ratio */
+}
+
+.hoverZoomLink img {
+    transition: transform 0.3s ease-in-out;
+}
+.hoverZoomLink img:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+}
+
+
+/* --- Utility Classes & Specific Components (from your provided CSS) --- */
 .one {
-
-  width: 160px;
-
-  height: 160px;
-
-  position: relative;
-
+  width: 160px;
+  height: 160px;
+  position: relative;
 }
-
-
 
 .two {
-
-  width: 160px;
-
-  height: 160px;
-
-  position: absolute;
-
-  transition: opacity .2s ease-in-out;
-
-  -moz-transition: opacity .2s ease-in-out;
-
-  -webkit-transition: opacity .2s ease-in-out;
-
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
 }
-
-
 
 .fade {
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+}
 
-  transition: opacity .2s ease-in-out;
-
-  -moz-transition: opacity .2s ease-in-out;
-
-  -webkit-transition: opacity .2s ease-in-out;
-
+span.highlight {
+  background-color: #ffffd0; /* Your existing highlight color */
 }
 
 
+/* --- List Styles (for news and achievements) --- */
+ul {
+    list-style: none; /* Removes default bullets */
+    padding: 0;
+    margin-left: 0;
+}
+li {
+    margin-bottom: 10px; /* Space between list items */
+    padding-left: 25px; /* Indent for custom bullet */
+    position: relative;
+}
+li::before {
+    content: "•"; /* Custom bullet point */
+    color: var(--primary-color); /* Use primary color for bullets */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    position: absolute;
+    left: 0;
+}
 
-span.highlight {
+/* News & Achievements Section Specifics */
+.news-date {
+    font-weight: 500; /* Slightly bolder than normal text */
+    color: var(--primary-color); /* Highlight dates with primary color */
+    margin-right: 5px;
+}
 
-  background-color: #ffcccb;
+.news-scroll-container {
+    max-height: 400px; /* Crucial: Sets a fixed height for scrolling */
+    overflow-y: auto;  /* Crucial: Enables vertical scrollbar when content overflows */
+    padding-right: 15px; /* Adds space for the scrollbar so text doesn't touch it */
+    border: 1px solid #eee; /* Optional: A light border for visual separation */
+    border-radius: 5px; /* Optional: Slightly rounded corners */
+    background-color: #fff; /* Optional: A clean background for the scrollable area */
+    padding: 15px; /* Optional: Internal padding around the content */
+}
 
+/* Horizontal Rule for Section Separation */
+hr {
+  border: 0;
+  height: 1px;
+  background: #ccc;
+  margin: 30px 0;
 }
