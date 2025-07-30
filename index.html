@@ -10,6 +10,92 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="icon" type="image/png" href="images/mcgill.png">
+  <style>
+    /* Basic styling for headings and lists if not already in stylesheet.css */
+    /* You might want to move these to your external stylesheet.css */
+    body { 
+        font-family: 'Inter', sans-serif; 
+        line-height: 1.6; 
+        color: #333; 
+        margin: 0;
+        padding: 20px;
+        background-color: #f9f9f9;
+    }
+    table {
+        margin-bottom: 20px;
+    }
+    name {
+        font-size: 2.5em;
+        font-weight: 700;
+        display: block;
+        margin-bottom: 15px;
+        color: #2c3e50; /* Dark blue-gray for names */
+    }
+    heading { 
+        font-size: 1.8em; 
+        font-weight: 700; 
+        margin-top: 20px; 
+        margin-bottom: 15px; 
+        display: block; 
+        color: var(--primary-color, #0056b3); /* Fallback to a nice blue */
+    }
+    p {
+        margin-bottom: 1em;
+    }
+    ul { 
+        list-style: none; 
+        padding: 0; 
+        margin-left: 0;
+    }
+    li { 
+        margin-bottom: 10px; 
+        padding-left: 25px; /* Indent for custom bullet */
+        position: relative; 
+    }
+    li::before { 
+        content: "•"; /* Custom bullet */
+        color: var(--primary-color, #0056b3); 
+        font-weight: bold; 
+        display: inline-block; 
+        width: 1em; 
+        margin-left: -1em; 
+        position: absolute;
+        left: 0;
+    }
+    .news-date { 
+        font-weight: 500; 
+        color: var(--primary-color, #0056b3); /* Highlight dates */
+        margin-right: 5px;
+    }
+    a { 
+        text-decoration: none; 
+        color: #007bff; /* Standard link blue */
+        transition: color 0.3s ease;
+    }
+    a:hover { 
+        text-decoration: underline; 
+        color: #0056b3; /* Darker blue on hover */
+    }
+    strong { font-weight: 700; }
+    em { font-style: italic; }
+    papertitle {
+        font-size: 1.1em;
+        font-weight: 600;
+        display: block;
+        margin-bottom: 5px;
+        color: #34495e; /* Slightly darker than body text */
+    }
+    img {
+        border-radius: 8px; /* Slightly rounded corners for images */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+    }
+    .hoverZoomLink img {
+        transition: transform 0.3s ease-in-out;
+    }
+    .hoverZoomLink img:hover {
+        transform: scale(1.02); /* Slight zoom on hover */
+    }
+  </style>
 </head>
 
 <body>
@@ -36,10 +122,11 @@
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="images/GurucharanProfile.jpg"><img style="width:100%;max-width:100%" alt="Profile photo of Gurucharan Marthi Krishna Kumar" src="images/GurucharanProfile.jpg" class="hoverZoomLink" loading="lazy"></a>
+              <a href="images/GurucharanProfile.jpg" class="hoverZoomLink"><img style="width:100%;max-width:100%" alt="Profile photo of Gurucharan Marthi Krishna Kumar" src="images/GurucharanProfile.jpg" loading="lazy"></a>
             </td>
           </tr>
         </tbody></table>
+
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
@@ -50,6 +137,7 @@
             </td>
           </tr>
         </tbody></table>
+
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -71,7 +159,7 @@
               <img src="images/nestedmorph.png" alt="NestedMorph" width="160" height="100" loading="lazy">
             </td>
             <td width="75%" valign="middle">
-              <a>
+              <a href="https://doi.org/10.1109/WACV61041.2025.00459">
                 <papertitle>NestedMorph: Enhancing Deformable Medical Image Registration with Nested Attention Mechanisms</papertitle>
               </a>
               <br>
@@ -92,11 +180,12 @@
               <br>
               <strong>Gurucharan Marthi Krishna Kumar</strong>, Vijay Jeyakumar, Siddarth S
               <br>
-              <em>Springer</em>, 2024
+              <em>Online</em>, Nov 2024 <small>(Undergraduate Work)</small>
               <p style="text-align:justify">📊 Developed a multimodal retrieval framework to support clinical workflows by combining imaging and metadata.</p>
             </td>
           </tr>
         </tbody></table>
+
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tbody>
             <tr>
@@ -116,8 +205,13 @@
               <td width="75%" valign="center">
                 <strong>Ph.D. in Neuroscience</strong><br>
                 McGill University, Montreal Neurological Institute<br>
-                <em>🗓️ 2022 – Present</em><br><br>
-        
+                <em>🗓️ 2022 – Present</em><br>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <img src="images/anna_university_logo.png" alt="Anna University" width="120" height="120" loading="lazy"> </td>
+              <td width="75%" valign="center">
                 <strong>B.E. in Biomedical Engineering</strong><br>
                 Anna University, India<br>
                 <em>🗓️ 2017 – 2021</em><br>
@@ -131,13 +225,48 @@
           <tbody>
             <tr>
               <td style="padding:20px;width:100%;vertical-align:middle">
-                <heading>📰 News</heading>
+                <heading>📰 News & Achievements</heading>
                 <ul>
-                  <li><strong><span style="color: var(--primary-color);">🎉 2025.06:</span></strong> One Paper Accepted at <em>MIUA Conference 2025</em>, Leeds, UK. <strong>(Oral)</strong>!</li>
-                  <li><strong><span style="color: var(--primary-color);">🏆 2025.04:</span></strong> Paper Presentation (Top 8.5%) at <em>Annual Research Showcase, MBZUAI</em>, UAE. <strong>(Oral)</strong>!</li>
-                  <li><strong><span style="color: var(--primary-color);">🎙️ 2025.03:</span></strong> One Paper Accepted at <em>ISBI 2025</em> in the session "Vision-Language Model", Houston, USA. <strong>(Oral)</strong>!</li>
-                  <li><strong><span style="color: var(--primary-color);">🎤 2024.11:</span></strong> Speaker at <em>XPANSE 2024</em> in the Science Pitch Talks on "FLARE Up Your Data"!</li>
-                  <li><strong><span style="color: var(--primary-color);">🌟 2024.10:</span></strong> First-authored paper on <em>Low-Rank Test-Time Adaptation</em> accepted at <strong>WACV 2025</strong>, Tucson, Arizona, USA. <strong>(Poster)</strong>!</li>
+                  <li>
+                    <span class="news-date">🗓️ July 2025:</span> 🎉 Our paper **"MedVisionLlama: Leveraging Pre-Trained Large Language Model Layers to Enhance Medical Image Segmentation"** has been accepted to **ICCVW 2025 (CVAMD 2025)**! 
+                    <br>
+                    <small>Preprint available: <a href="https://arxiv.org/abs/2410.02458">DOI: 10.48550/arXiv.2410.02458</a></small>
+                  </li>
+                  <li>
+                    <span class="news-date">🗓️ April 2025:</span> 🎓 Honored to receive the prestigious **Doctoral Research Scholarship (FRQS)**, a four-year scholarship worth **$91,667** to support my research on AI-based optic nerve tractography at the Montreal Neurological Institute.
+                  </li>
+                  <li>
+                    <span class="news-date">🗓️ January 2025:</span> ✈️ Awarded the **UNIQUE Conference Travel Award ($1,000 CAD)** to support travel and conference expenses for presenting my work at WACV 2025!
+                  </li>
+                  <li>
+                    <span class="news-date">🗓️ October 2024:</span> 📝 My first-authored paper **"NestedMorph: Enhancing Deformable Medical Image Registration with Nested Attention Mechanisms"** has been accepted to **IEEE/CVF Winter Conference on Applications of Computer Vision (WACV 2025)**, to be presented in March 2025 in Tucson, Arizona, USA.
+                    <br>
+                    <small>DOI: <a href="https://doi.org/10.1109/WACV61041.2025.00459">10.1109/WACV61041.2025.00459</a></small>
+                  </li>
+                  <li>
+                    <span class="news-date">🗓️ May 2024:</span> 📊 Presented the abstract and poster: "AP3 Evaluation of diffusion MRI methods and fiber tracking algorithms for optimal imaging of the anterior visual pathway" at the **2024 International Society for Magnetic Resonance in Medicine (ISMRM) Annual Meeting** in Singapore.
+                  </li>
+                  <li>
+                    <span class="news-date">🗓️ January 2024:</span> 🚀 Successfully fast-tracked from MSc to the **PhD program in Neuroscience at McGill University**!
+                  </li>
+                  <li>
+                    <span class="news-date">🗓️ December 2023:</span> 🌟 Received the **ISMRM Trainee Educational Stipend ($850 USD)** to support my attendance at the 2024 ISMRM Annual Meeting & Exhibition.
+                  </li>
+                  <li>
+                    <span class="news-date">🗓️ November 2023:</span> 👁️‍🗨️ Presented the abstract and poster: "Evaluation of MRI methods’ capacity for imaging the anterior visual pathway" at the **2023 Vision Health Research Network Annual Meeting** in Montreal.
+                  </li>
+                  <li>
+                    <span class="news-date">🗓️ July 2023:</span> 🧠 Presented the abstract and poster: "Selection and optimization of a pulse sequence and parameters for diffusion MRI of the optic nerve" at the **2023 Organization for Human Brain Mapping Annual Meeting** in Montreal.
+                  </li>
+                  <li>
+                    <span class="news-date">🗓️ January 2022:</span> 📚 Began my **MSc in Neuroscience at McGill University**.
+                  </li>
+                  <li>
+                    <span class="news-date">🗓️ May 2021:</span> 🏆 Awarded by the **Department of BME, SSNCE** for outstanding academic and extra-curricular performance over four years.
+                  </li>
+                  <li>
+                    <span class="news-date">🗓️ June 2021:</span> 🏅 Graduated from **Anna University with First Class in Distinction**, securing **University Rank 3** out of over 1000 candidates among all affiliated colleges!
+                  </li>
                 </ul>
               </td>
             </tr>
@@ -156,3 +285,9 @@
             </tr>
           </tbody>
         </table>
+
+      </td>
+    </tr>
+  </tbody></table>
+</body>
+</html>
